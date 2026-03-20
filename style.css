@@ -1,0 +1,139 @@
+:root {
+  --green-dark: #0f4c3a;
+  --green: #1b6b52;
+  --green-light: #2f8a68;
+  --orange: #f2a521;
+  --orange-hover: #db9418;
+  --bg-light: #f7f6f2;
+  --white: #ffffff;
+  --text-dark: #1f2933;
+  --text-muted: #5b6470;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --radius: 18px;
+  --container: 1180px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+img {
+
+}
+
+a {
+
+}
+
+ul {
+
+}
+
+.container {
+
+}
+
+.section {
+
+}
+
+.section-light {
+
+}
+
+.section-heading {
+
+}
+
+.btn {
+
+}
+
+.btn-primary {
+
+}
+
+.btn-primary:hover {
+
+}
+
+.btn-outline {
+
+}
+
+.btn-outline:hover {
+
+}
+
+/* HEADER */
+
+.site-header {
+
+}
+
+nav-wrapper {
+
+}
+
+.logo {
+
+}
+
+/* HERO */
+
+.hero {
+
+}
+
+.hero h1 {
+
+}
+
+.hero-text {
+
+
+}
+
+.hero-action {
+
+}
+
+/* ABOUT */
+
+.about-grid {
+
+}
+
+.about-image img {
+  
+}
+
+.about-content {
+
+}
+
+/* CARDS */
+
+
+
+/* CONTACT */
+
+/* FORM */
+
+.form {
+
+}
+
+/* Sticky mobile CTA */
+
+/* Responsive */
+
+
