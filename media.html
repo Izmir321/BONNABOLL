@@ -1,30 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Media & press | Bonnaboll</title>
-  <meta
-    name="description"
-    content="Pressmaterial, snabbfakta, bildgalleri och kontakt för media kring Bonnaboll."
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media & press | Bonnaboll</title>
+    <meta
+      name="description"
+      content="Pressmaterial, snabbfakta, bildgalleri och kontakt för media kring Bonnaboll." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      src="https://kit.fontawesome.com/373619c028.js"
+      crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="inner-container site-header">
+        <div class="mobile-menu">
+          <button class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <a href="index.html" class="logo"
+          ><img src="images/bonnalogo.jpeg" alt="Bonnaboll Logo"
+        /></a>
+        <div class="nav-wrapper">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="#about">Vad är Bonnaboll?</a></li>
+              <li><a href="#join">Partners</a></li>
+              <li><a href="#sponsor">Sponsring</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+              <li><a href="/media.html">Media</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="media-hero">
+        <div class="inner-container">
+          <div class="media-hero-content">
+            <h1>Media & press</h1>
+            <p>
+              Pressmaterial, snabbfakta, bildgalleri och kontakt för media kring
+              Bonnaboll.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="media-container">
+        <section class="media-info">
+          <div class="inner-container media-info-content">
+            <h2>Snabbfakta</h2>
+            <ul>
+              <li><strong>Grundat:</strong> 2022</li>
+              <li><strong>Plats:</strong> Skåne med omnejd</li>
+              <li>
+                <strong>Hur:</strong> Bussresa + match + supporterupplevelse
+              </li>
+              <li><strong>Hur många:</strong> ca 160 deltagare</li>
+              <li><strong>När:</strong> 2026/06/01</li>
+              <li><strong>Kontakt:</strong> info@bonnaboll.se</li>
+            </ul>
+          </div>
+        </section>
+        <section class="press-material">
+          <div class="inner-container press-material-content">
+            <h2>Pressmaterial</h2>
+            <div class="press-download">
+              <div class="download-flex">
+                <div class="download press-logo">
+                  <img src="/images/bonnalogo.jpeg" alt="" />
+                </div>
+                <a href="/press/logo.zip"
+                  >Logotyper <i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+              <div class="download-flex">
+                <div class="download press-images">
+                  <img src="/images/hero.avif" alt="" />
+                </div>
+                <a href="/press/images.zip"
+                  >Bilder <i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+              <div class="download-flex">
+                <div class="download press-short">
+                  <img src="/images/document.png" alt="" />
+                </div>
+                <a href="/press/press-short.zip"
+                  >Kort pressmeddelande <i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+              <div class="download-flex">
+                <div class="download press-long">
+                  <img src="/images/document.png" alt="" />
+                </div>
+                <a href="/press/press-long.zip"
+                  >Långt pressmeddelande <i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="media-gallery">
+        <div class="inner-container media-gallery-content">
+          <h2>Bildgalleri</h2>
+          <div class="gallery-carousel" aria-label="Bildgalleri-karusell">
+            <button
+              class="carousel-btn carousel-btn-prev"
+              aria-label="Visa tidigare bilder">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-  
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <article class="carousel-slide">
+                  <img
+                    src="/images/hero.avif"
+                    alt="Bonnaboll publik vid match" />
+                </article>
+                <article class="carousel-slide">
+                  <img
+                    src="/images/anmäl-deltagare.avif"
+                    alt="Deltagare under Bonnaboll" />
+                </article>
+                <article class="carousel-slide">
+                  <img
+                    src="/images/bli-sponsor.avif"
+                    alt="Sponsormaterial för Bonnaboll" />
+                </article>
+                <article class="carousel-slide">
+                  <img
+                    src="/images/kontakt.jpg"
+                    alt="Kontaktperson för Bonnaboll" />
+                </article>
+                <article class="carousel-slide">
+                  <img
+                    src="/images/publik.jpeg"
+                    alt="Bonnaboll supportersamling" />
+                </article>
+              </div>
+            </div>
 
-/* media /* 
+            <button
+              class="carousel-btn carousel-btn-next"
+              aria-label="Visa fler bilder">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="kontakt" class="contact-section inner-container">
+        <div class="contact-overlay"></div>
 
+        <div class="contact-content">
+          <div class="contact-box">
+            <h2>Kontakt</h2>
+            <p><strong>E-post:</strong> info@bonnaboll.se</p>
+            <p><strong>Telefon:</strong> xxx-xxxxxxx</p>
+            <div class="socials">
+              <a href="#" aria-label="Bonnaboll på Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Bonnaboll på Twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Bonnaboll på Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
 
-
-
-
-</body>
+          <form class="contact-form">
+            <input type="text" placeholder="Namn" required />
+            <input type="email" placeholder="E-post" required />
+            <select class="multiselect-dropdown">
+              <option value="option1">Privat</option>
+              <option value="option2">Företag</option>
+              <option value="option3">Media</option>
+            </select>
+            <textarea placeholder="Meddelande" rows="5" required></textarea>
+            <button type="submit" class="btn btn-secondary">Skicka</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
