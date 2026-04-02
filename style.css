@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 :root {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
   --green-dark: #0f4c3a;
   --green: #1b6b52;
   --green-light: #2f8a68;
@@ -22,6 +27,23 @@
 
 body {
   background-color: var(--bg-light);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
 }
 
 img {
@@ -495,15 +517,3 @@ li {
     max-width: 1320px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
