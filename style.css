@@ -114,6 +114,7 @@ li {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 0% 1rem;
+  z-index: 1000;
 }
 .mobile-menu {
   display: block;
@@ -181,6 +182,7 @@ li {
   text-align: center;
   display: flex;
   flex-direction: column;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   span {
     font-size: 3rem;
   }
@@ -313,6 +315,7 @@ li {
 .contact-section {
   position: relative;
   background: url("/images/kontakt.jpg") center/cover no-repeat;
+  z-index: 0;
 }
 
 .contact-overlay {

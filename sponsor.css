@@ -1,0 +1,137 @@
+.sponsor-hero-content h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  span {
+    font-size: 2rem;
+  }
+}
+
+/* sponsor checklist */
+.sponsor-check-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+.sponsor-image {
+  width: 100%;
+  max-width: 400px;
+  display: none;
+}
+.sponsor-image img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.check-item i {
+  color: var(--green);
+}
+
+.sponsor-check-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+.sponsor-check-content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* sponsor info */
+.sponsor-info-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sponsor-info-flex h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.sponsor-info-item {
+  background-color: rgb(205, 200, 200);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.sponsor-info-item i {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sponsor-image {
+    display: block;
+  }
+  .sponsor-image {
+    width: 50%;
+  }
+  .sponsor-check-content {
+    width: 50%;
+    gap: 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  .sponsor-check-content h2 {
+    background-color: var(--green);
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 1rem;
+  }
+  .sponsor-check-content-inner {
+    background-color: rgb(205, 200, 200);
+    padding: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .sponsor-image {
+    width: 60%;
+  }
+  .sponsor-info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .sponsor-info-item i {
+    display: block;
+    color: var(--green);
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .sponsor-image {
+    width: 70%;
+  }
+  .sponsor-check-flex {
+    gap: 2rem;
+  }
+  .check-item {
+    font-size: 17px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1536px) {
+  .check-item {
+    font-size: 18px;
+  }
+}
