@@ -300,3 +300,138 @@
   border-radius: 10px;
   font-size: 1rem;
 }
+
+
+
+/* mobil */ 
+
+@media (max-width: 992px) {
+  .event-simple-hero {
+    min-height: 46vh;
+    padding: 2.5rem 1.5rem;
+    margin-top: 70px;
+  }
+
+  .event-simple-content {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .event-simple-content h1 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  .event-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-simple-hero {
+    min-height: auto;
+    padding: 2rem 1rem;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .event-simple-content {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .event-badge {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .event-simple-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-simple-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .event-status {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .event-simple-content .btn,
+  .event-simple-content .btn-primary,
+  .event-simple-content .btn-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .event-info-grid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .event-info-card {
+    min-height: auto;
+    padding: 1.25rem 1rem;
+  }
+
+  .event-info-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .event-info-card p {
+    font-size: 0.95rem;
+  }
+
+  .event-description-box {
+    padding: 1.4rem;
+  }
+
+  .event-description-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-description-box p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-simple-hero {
+    padding: 1.5rem 0.75rem;
+    margin-top: 65px;
+  }
+
+  .event-simple-content {
+    padding: 1.2rem;
+  }
+
+  .event-simple-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .event-simple-content p {
+    font-size: 0.95rem;
+  }
+
+  .event-badge {
+    font-size: 0.8rem;
+  }
+
+  .event-info-card {
+    border-radius: 12px;
+  }
+
+  .event-description-box {
+    border-radius: 12px;
+  }
+}
