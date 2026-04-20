@@ -1,17 +1,16 @@
 .event-simple-hero {
   position: relative;
   min-height: 55vh;
-
-  max-width: 1200px; /* 🔥 samma som container */
+  max-width: 1200px;
   margin: 0 auto;
-  z-index: -1; /* 🔥 centrerar */
   margin-top: 0.5rem;
   background: url("../images/event-hero.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 4rem 2rem; /* lite inner padding */
-  border-radius: 0 0 20px 20px; /* match header */
+  padding: 4rem 2rem;
+  border-radius: 0 0 20px 20px;
 }
+
 .event-simple-hero::before {
   content: "";
   position: absolute;
@@ -187,6 +186,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+.event-description-box h1,
 .event-description-box h2 {
   color: #0f4c3a;
   margin-bottom: 1rem;
