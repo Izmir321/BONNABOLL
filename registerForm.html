@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anmälan | Bonnaboll</title>
+    <meta
+      name="description"
+      content="Anmälan till Bonnaboll med namn, e-post, telefonnummer och val av event." />
+    <link rel="icon" href="images/bonnalogo.jpeg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="registerForm.css" />
+  </head>
+  <body class="register-page-body">
+    <main class="register-page">
+      <form class="register-card" action="sendmail.php" method="POST">
+        <input type="hidden" name="form_type" value="registration" />
+
+        <h1>Anmäl dig</h1>
+        <p class="register-intro">Fyll i dina uppgifter nedan.</p>
+
+        <div class="register-field">
+          <label for="name">Namn</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="För- och efternamn"
+            required />
+        </div>
+
+        <div class="register-field">
+          <label for="email">E-post</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="namn@mail.se"
+            required />
+        </div>
+
+        <div class="register-field">
+          <label for="phone">Telefonnummer</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="070-123 45 67"
+            required />
+        </div>
+
+        <div class="register-field">
+          <label for="event_choice">Val av event</label>
+          <select name="event_choice" id="event_choice" required>
+            <option value="" disabled selected>Välj event</option>
+            <option value="Bonnaboll 2025">Bonnaboll 2026</option>
+            <option value="Bonnatrav 2025">Bonnatrav 2026</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary register-submit">
+          Skicka anmälan
+        </button>
+        <a class="btn btn-secondary" href="index.html">
+          Tillbaka till startsidan
+        </a>
+      </form>
+    </main>
+  </body>
+</html>

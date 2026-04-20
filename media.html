@@ -7,7 +7,7 @@
     <meta
       name="description"
       content="Pressmaterial, snabbfakta, bildgalleri och kontakt för media kring Bonnaboll." />
-
+    <link rel="icon" href="images/bonnalogo.jpeg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -180,15 +180,20 @@
             </div>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Namn" required />
-            <input type="email" placeholder="E-post" required />
-            <select class="multiselect-dropdown">
-              <option value="option1">Privat</option>
-              <option value="option2">Företag</option>
-              <option value="option3">Media</option>
+          <form class="contact-form" action="sendmail.php" method="POST">
+            <input type="text" name="name" placeholder="Namn" required />
+            <input type="email" name="email" placeholder="E-post" required />
+            <select class="multiselect-dropdown" name="type" required>
+              <option value="" disabled selected>Välj typ</option>
+              <option value="Privat">Privat</option>
+              <option value="Företag">Företag</option>
+              <option value="Media">Media</option>
             </select>
-            <textarea placeholder="Meddelande" rows="5" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Meddelande"
+              rows="5"
+              required></textarea>
             <button type="submit" class="btn btn-secondary">Skicka</button>
           </form>
         </div>

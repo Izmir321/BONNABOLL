@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bonnaboll Event | Nästa resa</title>
-
+    <link rel="icon" href="images/bonnalogo.jpeg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +41,7 @@
               <li><a href="index.html#join">Partners</a></li>
               <li><a href="index.html#sponsor">Sponsring</a></li>
               <li><a href="event.html">Event</a></li>
-              <li><a href="index.html#contact">Kontakt</a></li>
+              <li><a href="index.html#kontakt">Kontakt</a></li>
               <li><a href="media.html">Media</a></li>
             </ul>
           </nav>
@@ -51,7 +51,7 @@
       <!-- resten av event-sidan här -->
       <section class="event-simple-hero">
         <div class="event-simple-overlay"></div>
-        <div class="container event-simple-content">
+        <div class="inner-container event-simple-content">
           <p class="event-badge">Nästa resa</p>
           <h1>Bonnaboll 2025</h1>
           <p>
@@ -92,12 +92,22 @@
             <h1>Bonnaboll 2025</h1>
 
             <p>
-Bonnaboll – 9 maj
-
-Den 9 maj är det dags för årets stora Bonnaboll. Två bussar rullar iväg mot en hemlig match, fyllda med folk, förväntan och full jävla stämning. Destinationen avslöjas inte förrän det är dags, och precis som alltid är det upplevelsen, gemenskapen och överraskningen som står i centrum. En dag för alla som älskar fotboll, kaos, humor och minnen man snackar om länge efteråt.
-Bonnatrav – 31 maj
-
-Den 31 maj skriver vi ett nytt kapitel när Bonnaboll intar Elitloppet på Solvalla och förvandlas till Bonnatrav. Det här är första gången någonsin vi gör det, och det är ett helt unikt upplägg där du åker med gratis – resa tur och retur Helsingborg–Stockholm, lunch på plats och merch i form av tröja och hatt ingår. Vi åker inte dit för att smälta in, vi åker dit för att märkas och för att hjälpa till att lyfta stämningen inför en publik på runt 18 000 personer. Bonnatrav blir en upplevelse utöver det vanliga där vår energi flyttar in på en av Sveriges mest klassiska och största eventdagar.
+              Bonnaboll – 9 maj Den 9 maj är det dags för årets stora Bonnaboll.
+              Två bussar rullar iväg mot en hemlig match, fyllda med folk,
+              förväntan och full jävla stämning. Destinationen avslöjas inte
+              förrän det är dags, och precis som alltid är det upplevelsen,
+              gemenskapen och överraskningen som står i centrum. En dag för alla
+              som älskar fotboll, kaos, humor och minnen man snackar om länge
+              efteråt. Bonnatrav – 31 maj Den 31 maj skriver vi ett nytt kapitel
+              när Bonnaboll intar Elitloppet på Solvalla och förvandlas till
+              Bonnatrav. Det här är första gången någonsin vi gör det, och det
+              är ett helt unikt upplägg där du åker med gratis – resa tur och
+              retur Helsingborg–Stockholm, lunch på plats och merch i form av
+              tröja och hatt ingår. Vi åker inte dit för att smälta in, vi åker
+              dit för att märkas och för att hjälpa till att lyfta stämningen
+              inför en publik på runt 18 000 personer. Bonnatrav blir en
+              upplevelse utöver det vanliga där vår energi flyttar in på en av
+              Sveriges mest klassiska och största eventdagar.
             </p>
             <p class="event-status">Planeras just nu</p>
           </div>
@@ -114,15 +124,20 @@ Den 31 maj skriver vi ett nytt kapitel när Bonnaboll intar Elitloppet på Solva
             <p><strong>Telefon:</strong> xxx-xxxxxxx</p>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Namn" required />
-            <input type="email" placeholder="E-post" required />
-            <select class="multiselect-dropdown">
-              <option value="option1">Privat</option>
-              <option value="option2">Företag</option>
-              <option value="option3">Media</option>
+          <form class="contact-form" action="sendmail.php" method="POST">
+            <input type="text" name="name" placeholder="Namn" required />
+            <input type="email" name="email" placeholder="E-post" required />
+            <select class="multiselect-dropdown" name="type" required>
+              <option value="" disabled selected>Välj typ</option>
+              <option value="Privat">Privat</option>
+              <option value="Företag">Företag</option>
+              <option value="Media">Media</option>
             </select>
-            <textarea placeholder="Meddelande" rows="5" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Meddelande"
+              rows="5"
+              required></textarea>
             <button type="submit" class="btn btn-secondary">Skicka</button>
           </form>
         </div>

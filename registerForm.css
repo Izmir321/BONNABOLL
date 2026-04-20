@@ -1,0 +1,76 @@
+.register-page-body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f6f2 0%, #edf4ef 100%);
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register-card h1 {
+  color: var(--green-dark);
+  text-align: center;
+}
+
+.register-intro {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.register-field label {
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.register-field input,
+.register-field select {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: var(--white);
+  font-family: var(--font-heading);
+}
+
+.register-field input:focus,
+.register-field select:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: 0 0 0 4px rgba(27, 107, 82, 0.12);
+}
+
+.register-submit {
+  width: 100%;
+  padding: 0.95rem 1.2rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .register-card {
+    padding: 2rem;
+  }
+}

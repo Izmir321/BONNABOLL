@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $subject = "Nytt meddelande från $name: $type";
 
     if (mail($to, $subject, $body, implode("\r\n", $headers))) {
-        header("Location: /tack.html");
+        header("Location: tack.html");
         exit;
     } else {
         echo "Något gick fel. Försök igen senare.";

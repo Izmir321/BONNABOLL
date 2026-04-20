@@ -14,7 +14,7 @@
       content="Vi sprider läktarmagi i lokalfotbollen." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/bonnalogo.jpeg" />
-
+    <link rel="icon" href="images/bonnalogo.jpeg" type="image/jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +44,7 @@
               <li><a href="#about">Vad är Bonnaboll?</a></li>
               <li><a href="#join">Partners</a></li>
               <li><a href="/sponsor.html">Sponsring</a></li>
-              <li><a href="#kontact">Kontakt</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
               <li><a href="/media.html">Media</a></li>
             </ul>
           </nav>
@@ -89,8 +89,30 @@
           </div>
         </div>
       </section>
-
-      <!-- CARD & PARTNER SECTION -->
+      <section class="about-bonnatrav inner-container">
+        <div class="about-bonnatrav-grid">
+          <img src="images/red-smoke.jpeg" alt="" />
+          <div class="about-bonnatrav-text">
+            <h2>Vad är Bonnatrav?</h2>
+            <p>
+              Bonnatrav är ett unikt och nytänkande event i samband med
+              Elitloppet på Solvalla.<br />
+              Det är ett färdigt upplägg där företag helt kostnadsfritt kan
+              bjuda med kunder, personal eller samarbetspartners på en
+              minnesvärd heldag fylld av trav, gemenskap och energi. <br />
+              En stark visuell identitet, 200 personer i rosa tröjor och
+              tusentals åskådare på plats skapas en upplevelse som sticker ut –
+              både på plats och i minnet.
+            </p>
+            <a
+              href="/press/Bonnatrav-Partner.pdf"
+              target="_blank"
+              class="btn btn-primary"
+              >Läs mer <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
       <section class="cta-cards-section inner-container">
         <div class="">
           <h2 class="section-title">Våra möjligheter</h2>
@@ -104,7 +126,7 @@
               <div class="cta-overlay"></div>
               <div class="cta-card-content">
                 <h3>Anmäl deltagare</h3>
-                <a href="#kontakt" class="btn btn-primary">Anmäl dig</a>
+                <a href="registerForm.html" class="btn btn-primary">Anmäl dig</a>
               </div>
             </div>
 
@@ -130,7 +152,7 @@
           <h2 class="section-title">Våra partners</h2>
           <p class="partners-intro">
             Vi samarbetar med företag som vill synas i en levande och lokal
-            fotbollsmiljö. Svep i mobilen eller använd pilarna för att se fler.
+            fotbollsmiljö.
           </p>
 
           <div
@@ -141,43 +163,25 @@
             <div class="carousel-viewport">
               <div class="carousel-track">
                 <article class="carousel-slide partner-card">
-                  <span class="partner-pill">Huvudpartner</span>
-                  <h3>Er logotyp här</h3>
-                  <p>
-                    Perfekt för företag som vill ta en tydlig plats i resan.
-                  </p>
+                  <img src="/images/partnerlogos/bjärechips.jpeg" alt="" />
                 </article>
 
                 <article class="carousel-slide partner-card">
-                  <span class="partner-pill">Matchpartner</span>
-                  <h3>Lokal synlighet</h3>
-                  <p>
-                    Syns före, under och efter våra upplevelser kring matchen.
-                  </p>
+                  <img src="/images/partnerlogos/latitude-65.jpeg" alt="" />
                 </article>
 
                 <article class="carousel-slide partner-card">
-                  <span class="partner-pill">Resepartner</span>
-                  <h3>Buss & event</h3>
-                  <p>
-                    Koppla ert varumärke till gemenskap, energi och närvaro.
-                  </p>
-                </article>
-
-                <article class="carousel-slide partner-card">
-                  <span class="partner-pill">Mediapartner</span>
-                  <h3>Innehåll & räckvidd</h3>
-                  <p>
-                    Få exponering i sociala medier, bildmaterial och kampanjer.
-                  </p>
+                  <img src="/images/partnerlogos/pd-bygg.jpeg" alt="" />
                 </article>
 
                 <article class="carousel-slide partner-card partner-card--cta">
-                  <span class="partner-pill">Bli nästa partner</span>
-                  <h3>Vill du vara med?</h3>
-                  <p>
-                    Kontakta Bonnaboll så skräddarsyr vi ett upplägg för er.
-                  </p>
+                  <img src="/images/partnerlogos/rubinpool-logo.png" alt="" />
+                </article>
+                <article class="carousel-slide partner-card partner-card--cta">
+                  <img src="/images/partnerlogos/snickarhjälp.jpeg" alt="" />
+                </article>
+                <article class="carousel-slide partner-card partner-card--cta">
+                  <img src="/images/partnerlogos/ica-maxi.jpg" alt="" />
                 </article>
               </div>
             </div>
@@ -206,15 +210,20 @@
             </div>
           </div>
 
-          <form class="contact-form">
-            <input type="text" placeholder="Namn" required />
-            <input type="email" placeholder="E-post" required />
-            <select class="multiselect-dropdown">
-              <option value="option1">Privat</option>
-              <option value="option2">Företag</option>
-              <option value="option3">Media</option>
+          <form class="contact-form" action="sendmail.php" method="POST">
+            <input type="text" name="name" placeholder="Namn" required />
+            <input type="email" name="email" placeholder="E-post" required />
+            <select class="multiselect-dropdown" name="type" required>
+              <option value="" disabled selected>Välj typ</option>
+              <option value="Privat">Privat</option>
+              <option value="Företag">Företag</option>
+              <option value="Media">Media</option>
             </select>
-            <textarea placeholder="Meddelande" rows="5" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Meddelande"
+              rows="5"
+              required></textarea>
             <button type="submit" class="btn btn-secondary">Skicka</button>
           </form>
         </div>
